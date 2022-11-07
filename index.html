@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      circle{
+      height: 50px;
+      width: 50px;
+      background-color: whitesmoke;
+      border: 2px solid black;
+      border-radius: 50%;
+      display: inline-block;
+        };
+        
+        .remove{
+display: none;
+
+        }
+        
+        </style>
+    <form>
+      <label for="coinCount">How many?</label>
+      <input type="number" id="coinCount" name="coinCount" />
+      <label for="moneyType">Which coin?</label>
+      <select id="moneyType" name="moneyType">
+        <option id="Quarter">Quarter</option>
+        <option id="Dime">Dime</option>
+        <option id="Nickel">Nickel</option>
+        <option id="Penny">Penny</option>
+      </select>
+      <button type = "button" id = "circle" onclick="myFunction()">Make Money!</button>
+    </form>
+
+    <div class="coinPurse"></div>
+    <script src="makemoney.js"></script>
+
+  </body>
+</html>
