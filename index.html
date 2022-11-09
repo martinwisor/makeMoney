@@ -4,39 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <style>
-      circle{
-      height: 50px;
-      width: 50px;
-      background-color: whitesmoke;
-      border: 2px solid black;
-      border-radius: 50%;
-      display: inline-block;
-        };
-        
-        .remove{
-display: none;
+    <section class="makeMoney">
+      <h1>Make Money</h1>
+      <form class="moneyform">
+        <label for="amount">How Many?</label>
+        <input type="number" name="amount" id="amount" min="0" />
+        <label for="type">Which Coin?</label>
+        <select name="type" id="type">
+          <option value="noChoice">Please choose a coin</option>
+          <option value="penny">Penny</option>
+          <option value="nickel">Nickel</option>
+          <option value="dime">Dime</option>
+          <option value="quarter">Quarter</option>
+        </select>
+        <button class="moneyButton">Make Money!</button>
+      </form>
 
-        }
-        
-        </style>
-    <form>
-      <label for="coinCount">How many?</label>
-      <input type="number" id="coinCount" name="coinCount" />
-      <label for="moneyType">Which coin?</label>
-      <select id="moneyType" name="moneyType">
-        <option id="Quarter">Quarter</option>
-        <option id="Dime">Dime</option>
-        <option id="Nickel">Nickel</option>
-        <option id="Penny">Penny</option>
-      </select>
-      <button type = "button" id = "circle" onclick="myFunction()">Make Money!</button>
-    </form>
-
-    <div class="coinPurse"></div>
+      <ul class="change-jar"></ul>
+    </section>
     <script src="makemoney.js"></script>
 
   </body>
